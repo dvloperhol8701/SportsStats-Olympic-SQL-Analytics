@@ -1,0 +1,982 @@
+{
+	"_type": "Project",
+	"_id": "AAAAAAFF+h6SjaM2Hec=",
+	"name": "Untitled",
+	"ownedElements": [
+		{
+			"_type": "UMLModel",
+			"_id": "AAAAAAFF+qBWK6M3Z8Y=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "Model",
+			"ownedElements": [
+				{
+					"_type": "UMLClassDiagram",
+					"_id": "AAAAAAFF+qBtyKM79qY=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Main",
+					"defaultDiagram": true
+				}
+			]
+		},
+		{
+			"_type": "DFDDataFlowModel",
+			"_id": "AAAAAAGg0f22vwNf1KU=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "DataFlowModel1",
+			"ownedElements": [
+				{
+					"_type": "DFDDiagram",
+					"_id": "AAAAAAGg0f22vwNgQuc=",
+					"_parent": {
+						"$ref": "AAAAAAGg0f22vwNf1KU="
+					},
+					"name": "DFDDiagram1",
+					"ownedViews": [
+						{
+							"_type": "DFDExternalEntityView",
+							"_id": "AAAAAAGg0f3/2wNmLGs=",
+							"_parent": {
+								"$ref": "AAAAAAGg0f22vwNgQuc="
+							},
+							"model": {
+								"$ref": "AAAAAAGg0f3/2wNkAao="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGg0f3/3ANssdw=",
+									"_parent": {
+										"$ref": "AAAAAAGg0f3/2wNmLGs="
+									},
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 338,
+									"top": 29,
+									"width": 172,
+									"height": 13
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGg0f3/3ANn/Tw=",
+									"_parent": {
+										"$ref": "AAAAAAGg0f3/2wNmLGs="
+									},
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 338,
+									"top": 34,
+									"width": 172,
+									"height": 39,
+									"text": "[ Raw CSV Data Sources ]   - athlete_events.csv   - noc_regions.csv",
+									"wordWrap": true
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGg0f3/3ANojgk=",
+									"_parent": {
+										"$ref": "AAAAAAGg0f3/2wNmLGs="
+									},
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 176,
+									"top": -16,
+									"height": 13
+								}
+							],
+							"font": "Arial;13;0",
+							"parentStyle": false,
+							"left": 328,
+							"top": 24,
+							"width": 192,
+							"height": 59,
+							"nameLabel": {
+								"$ref": "AAAAAAGg0f3/3ANn/Tw="
+							}
+						},
+						{
+							"_type": "DFDProcessView",
+							"_id": "AAAAAAGg0f5u4wNzDBc=",
+							"_parent": {
+								"$ref": "AAAAAAGg0f22vwNgQuc="
+							},
+							"model": {
+								"$ref": "AAAAAAGg0f5u4wNxtEw="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGg0f5u5AN0jDc=",
+									"_parent": {
+										"$ref": "AAAAAAGg0f5u4wNzDBc="
+									},
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 362,
+									"top": 161,
+									"width": 124,
+									"height": 104,
+									"text": "Process 1.0: Ingestion & Relational Staging - Define table DDL schemas and assign datatypes  - Bulk load CSV records into SQL engine",
+									"wordWrap": true
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGg0f5u5AN1ZTI=",
+									"_parent": {
+										"$ref": "AAAAAAGg0f5u4wNzDBc="
+									},
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 362,
+									"top": 133,
+									"width": 124,
+									"height": 13
+								}
+							],
+							"font": "Arial;13;0",
+							"parentStyle": false,
+							"left": 352,
+							"top": 128,
+							"width": 144,
+							"height": 184,
+							"nameLabel": {
+								"$ref": "AAAAAAGg0f5u5AN0jDc="
+							},
+							"idLabel": {
+								"$ref": "AAAAAAGg0f5u5AN1ZTI="
+							}
+						},
+						{
+							"_type": "DFDProcessView",
+							"_id": "AAAAAAGg0f5xkwN+4sk=",
+							"_parent": {
+								"$ref": "AAAAAAGg0f22vwNgQuc="
+							},
+							"model": {
+								"$ref": "AAAAAAGg0f5xkwN8GJk="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGg0f5xkwN/me4=",
+									"_parent": {
+										"$ref": "AAAAAAGg0f5xkwN+4sk="
+									},
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 362,
+									"top": 377,
+									"width": 124,
+									"height": 104,
+									"text": "Process 2.0: Data Hygiene & Profiling Checks - Audit NULL counts in Age, Height, Weight, Medal - Identify and resolve orphan foreign keys (NOC)",
+									"wordWrap": true
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGg0f5xkwOAetE=",
+									"_parent": {
+										"$ref": "AAAAAAGg0f5xkwN+4sk="
+									},
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 362,
+									"top": 349,
+									"width": 124,
+									"height": 13
+								}
+							],
+							"font": "Arial;13;0",
+							"parentStyle": false,
+							"left": 352,
+							"top": 344,
+							"width": 144,
+							"height": 152,
+							"nameLabel": {
+								"$ref": "AAAAAAGg0f5xkwN/me4="
+							},
+							"idLabel": {
+								"$ref": "AAAAAAGg0f5xkwOAetE="
+							}
+						},
+						{
+							"_type": "DFDProcessView",
+							"_id": "AAAAAAGg0gAIvQOSCr0=",
+							"_parent": {
+								"$ref": "AAAAAAGg0f22vwNgQuc="
+							},
+							"model": {
+								"$ref": "AAAAAAGg0gAIvQOQjQ0="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGg0gAIvQOTuq0=",
+									"_parent": {
+										"$ref": "AAAAAAGg0gAIvQOSCr0="
+									},
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 362,
+									"top": 569,
+									"width": 132,
+									"height": 169,
+									"text": "Process 3.0: Transformation & Analytical SQL Engine - Filter valid physiological data (post-1960 focus) - Compute Body Mass Index (BMI) - Deduplicate team event medals via CTEs - Calculate min, max, average age windows by sport",
+									"wordWrap": true
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGg0gAIvQOUgWc=",
+									"_parent": {
+										"$ref": "AAAAAAGg0gAIvQOSCr0="
+									},
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 362,
+									"top": 541,
+									"width": 132,
+									"height": 13
+								}
+							],
+							"font": "Arial;13;0",
+							"parentStyle": false,
+							"left": 352,
+							"top": 536,
+							"width": 152,
+							"height": 238,
+							"nameLabel": {
+								"$ref": "AAAAAAGg0gAIvQOTuq0="
+							},
+							"idLabel": {
+								"$ref": "AAAAAAGg0gAIvQOUgWc="
+							}
+						},
+						{
+							"_type": "DFDProcessView",
+							"_id": "AAAAAAGg0gEPTQPSvSE=",
+							"_parent": {
+								"$ref": "AAAAAAGg0f22vwNgQuc="
+							},
+							"model": {
+								"$ref": "AAAAAAGg0gEPTQPQpyc="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGg0gEPTQPTGyU=",
+									"_parent": {
+										"$ref": "AAAAAAGg0gEPTQPSvSE="
+									},
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 194,
+									"top": 865,
+									"width": 164,
+									"height": 65,
+									"text": "Output A: Coaching Dossier  - Anthropometric baselines - Peak performance windows - Sport specialization data",
+									"wordWrap": true
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGg0gEPTQPUJTY=",
+									"_parent": {
+										"$ref": "AAAAAAGg0gEPTQPSvSE="
+									},
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 194,
+									"top": 837,
+									"width": 164,
+									"height": 13
+								}
+							],
+							"font": "Arial;13;0",
+							"parentStyle": false,
+							"left": 184,
+							"top": 832,
+							"width": 184,
+							"height": 134,
+							"nameLabel": {
+								"$ref": "AAAAAAGg0gEPTQPTGyU="
+							},
+							"idLabel": {
+								"$ref": "AAAAAAGg0gEPTQPUJTY="
+							}
+						},
+						{
+							"_type": "DFDProcessView",
+							"_id": "AAAAAAGg0gIqbgPiHmc=",
+							"_parent": {
+								"$ref": "AAAAAAGg0f22vwNgQuc="
+							},
+							"model": {
+								"$ref": "AAAAAAGg0gIqbgPgU8M="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGg0gIqbgPjHuA=",
+									"_parent": {
+										"$ref": "AAAAAAGg0gIqbgPiHmc="
+									},
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 514,
+									"top": 873,
+									"width": 140,
+									"height": 78,
+									"text": "Output B: Media Story Pack  - Deduplicated medal tables - Longest athletic careers - Female representation rate",
+									"wordWrap": true
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGg0gIqbgPkUZU=",
+									"_parent": {
+										"$ref": "AAAAAAGg0gIqbgPiHmc="
+									},
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 514,
+									"top": 845,
+									"width": 140,
+									"height": 13
+								}
+							],
+							"font": "Arial;13;0",
+							"parentStyle": false,
+							"left": 504,
+							"top": 840,
+							"width": 160,
+							"height": 121,
+							"nameLabel": {
+								"$ref": "AAAAAAGg0gIqbgPjHuA="
+							},
+							"idLabel": {
+								"$ref": "AAAAAAGg0gIqbgPkUZU="
+							}
+						},
+						{
+							"_type": "DFDExternalEntityView",
+							"_id": "AAAAAAGg0gLsmQPwgkQ=",
+							"_parent": {
+								"$ref": "AAAAAAGg0f22vwNgQuc="
+							},
+							"model": {
+								"$ref": "AAAAAAGg0gLsmQPueSI="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGg0gLsmgP2K24=",
+									"_parent": {
+										"$ref": "AAAAAAGg0gLsmQPwgkQ="
+									},
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 194,
+									"top": 1005,
+									"width": 164,
+									"height": 13
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGg0gLsmQPxbfU=",
+									"_parent": {
+										"$ref": "AAAAAAGg0gLsmQPwgkQ="
+									},
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 194,
+									"top": 1010,
+									"width": 164,
+									"height": 13,
+									"text": "High-Performance Trainers",
+									"wordWrap": true
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGg0gLsmQPylco=",
+									"_parent": {
+										"$ref": "AAAAAAGg0gLsmQPwgkQ="
+									},
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"height": 13
+								}
+							],
+							"font": "Arial;13;0",
+							"parentStyle": false,
+							"left": 184,
+							"top": 1000,
+							"width": 184,
+							"height": 48,
+							"nameLabel": {
+								"$ref": "AAAAAAGg0gLsmQPxbfU="
+							}
+						},
+						{
+							"_type": "DFDExternalEntityView",
+							"_id": "AAAAAAGg0gN0qgP8otU=",
+							"_parent": {
+								"$ref": "AAAAAAGg0f22vwNgQuc="
+							},
+							"model": {
+								"$ref": "AAAAAAGg0gN0qQP6yRg="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGg0gN0qgQCS2o=",
+									"_parent": {
+										"$ref": "AAAAAAGg0gN0qgP8otU="
+									},
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 514,
+									"top": 1005,
+									"width": 140,
+									"height": 13
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGg0gN0qgP9t1Q=",
+									"_parent": {
+										"$ref": "AAAAAAGg0gN0qgP8otU="
+									},
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 514,
+									"top": 1010,
+									"width": 140,
+									"height": 13,
+									"text": "Sports Journalists",
+									"wordWrap": true
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGg0gN0qgP+OUE=",
+									"_parent": {
+										"$ref": "AAAAAAGg0gN0qgP8otU="
+									},
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"height": 13
+								}
+							],
+							"font": "Arial;13;0",
+							"parentStyle": false,
+							"left": 504,
+							"top": 1000,
+							"width": 160,
+							"height": 40,
+							"nameLabel": {
+								"$ref": "AAAAAAGg0gN0qgP9t1Q="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGg0gPIlQQV9uw=",
+							"_parent": {
+								"$ref": "AAAAAAGg0f22vwNgQuc="
+							},
+							"model": {
+								"$ref": "AAAAAAGg0gPIlQQT4nQ="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGg0gPIlQQWQGI=",
+									"_parent": {
+										"$ref": "AAAAAAGg0gPIlQQV9uw="
+									},
+									"model": {
+										"$ref": "AAAAAAGg0gPIlQQT4nQ="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"left": 438,
+									"top": 98,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGg0gPIlQQV9uw="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"parentStyle": false,
+							"head": {
+								"$ref": "AAAAAAGg0f5u4wNzDBc="
+							},
+							"tail": {
+								"$ref": "AAAAAAGg0f3/2wNmLGs="
+							},
+							"lineStyle": 2,
+							"points": "424:83;424:128",
+							"nameLabel": {
+								"$ref": "AAAAAAGg0gPIlQQWQGI="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGg0gParQQeylI=",
+							"_parent": {
+								"$ref": "AAAAAAGg0f22vwNgQuc="
+							},
+							"model": {
+								"$ref": "AAAAAAGg0gParQQcQUI="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGg0gParQQf4yM=",
+									"_parent": {
+										"$ref": "AAAAAAGg0gParQQeylI="
+									},
+									"model": {
+										"$ref": "AAAAAAGg0gParQQcQUI="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"left": 438,
+									"top": 321,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGg0gParQQeylI="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"parentStyle": false,
+							"head": {
+								"$ref": "AAAAAAGg0f5xkwN+4sk="
+							},
+							"tail": {
+								"$ref": "AAAAAAGg0f5u4wNzDBc="
+							},
+							"lineStyle": 2,
+							"points": "424:312;424:344",
+							"nameLabel": {
+								"$ref": "AAAAAAGg0gParQQf4yM="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGg0gPq7QQnHNw=",
+							"_parent": {
+								"$ref": "AAAAAAGg0f22vwNgQuc="
+							},
+							"model": {
+								"$ref": "AAAAAAGg0gPq7AQlxwA="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGg0gPq7QQoW4Y=",
+									"_parent": {
+										"$ref": "AAAAAAGg0gPq7QQnHNw="
+									},
+									"model": {
+										"$ref": "AAAAAAGg0gPq7AQlxwA="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"left": 439,
+									"top": 509,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGg0gPq7QQnHNw="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"parentStyle": false,
+							"head": {
+								"$ref": "AAAAAAGg0gAIvQOSCr0="
+							},
+							"tail": {
+								"$ref": "AAAAAAGg0f5xkwN+4sk="
+							},
+							"lineStyle": 2,
+							"points": "425:496;425:536",
+							"nameLabel": {
+								"$ref": "AAAAAAGg0gPq7QQoW4Y="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGg0gP/dQQw5Yk=",
+							"_parent": {
+								"$ref": "AAAAAAGg0f22vwNgQuc="
+							},
+							"model": {
+								"$ref": "AAAAAAGg0gP/dQQuSDU="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGg0gP/dQQxSTA=",
+									"_parent": {
+										"$ref": "AAAAAAGg0gP/dQQw5Yk="
+									},
+									"model": {
+										"$ref": "AAAAAAGg0gP/dQQuSDU="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"left": 295,
+									"top": 641,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGg0gP/dQQw5Yk="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"parentStyle": false,
+							"head": {
+								"$ref": "AAAAAAGg0gEPTQPSvSE="
+							},
+							"tail": {
+								"$ref": "AAAAAAGg0gAIvQOSCr0="
+							},
+							"lineStyle": 2,
+							"points": "352:648;280:648;280:832",
+							"nameLabel": {
+								"$ref": "AAAAAAGg0gP/dQQxSTA="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGg0gQiPQRGlTw=",
+							"_parent": {
+								"$ref": "AAAAAAGg0f22vwNgQuc="
+							},
+							"model": {
+								"$ref": "AAAAAAGg0gQiPQREZfQ="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGg0gQiPQRHcKQ=",
+									"_parent": {
+										"$ref": "AAAAAAGg0gQiPQRGlTw="
+									},
+									"model": {
+										"$ref": "AAAAAAGg0gQiPQREZfQ="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"left": 591,
+									"top": 648,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGg0gQiPQRGlTw="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"parentStyle": false,
+							"head": {
+								"$ref": "AAAAAAGg0gIqbgPiHmc="
+							},
+							"tail": {
+								"$ref": "AAAAAAGg0gAIvQOSCr0="
+							},
+							"lineStyle": 2,
+							"points": "504:655;576:655;576:840",
+							"nameLabel": {
+								"$ref": "AAAAAAGg0gQiPQRHcKQ="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGg0gSKbQRdl/E=",
+							"_parent": {
+								"$ref": "AAAAAAGg0f22vwNgQuc="
+							},
+							"model": {
+								"$ref": "AAAAAAGg0gSKbQRbv5k="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGg0gSKbQReirY=",
+									"_parent": {
+										"$ref": "AAAAAAGg0gSKbQRdl/E="
+									},
+									"model": {
+										"$ref": "AAAAAAGg0gSKbQRbv5k="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"left": 290,
+									"top": 976,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGg0gSKbQRdl/E="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"parentStyle": false,
+							"head": {
+								"$ref": "AAAAAAGg0gLsmQPwgkQ="
+							},
+							"tail": {
+								"$ref": "AAAAAAGg0gEPTQPSvSE="
+							},
+							"lineStyle": 2,
+							"points": "276:966;276:1000",
+							"nameLabel": {
+								"$ref": "AAAAAAGg0gSKbQReirY="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGg0gSbnQRmzhU=",
+							"_parent": {
+								"$ref": "AAAAAAGg0f22vwNgQuc="
+							},
+							"model": {
+								"$ref": "AAAAAAGg0gSbnQRkhQI="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGg0gSbnQRnojk=",
+									"_parent": {
+										"$ref": "AAAAAAGg0gSbnQRmzhU="
+									},
+									"model": {
+										"$ref": "AAAAAAGg0gSbnQRkhQI="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"left": 598,
+									"top": 973,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGg0gSbnQRmzhU="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"parentStyle": false,
+							"head": {
+								"$ref": "AAAAAAGg0gN0qgP8otU="
+							},
+							"tail": {
+								"$ref": "AAAAAAGg0gIqbgPiHmc="
+							},
+							"lineStyle": 2,
+							"points": "584:961;584:1000",
+							"nameLabel": {
+								"$ref": "AAAAAAGg0gSbnQRnojk="
+							}
+						}
+					]
+				},
+				{
+					"_type": "DFDExternalEntity",
+					"_id": "AAAAAAGg0f3/2wNkAao=",
+					"_parent": {
+						"$ref": "AAAAAAGg0f22vwNf1KU="
+					},
+					"name": "[ Raw CSV Data Sources ]   - athlete_events.csv   - noc_regions.csv",
+					"ownedElements": [
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGg0gPIlQQT4nQ=",
+							"_parent": {
+								"$ref": "AAAAAAGg0f3/2wNkAao="
+							},
+							"source": {
+								"$ref": "AAAAAAGg0f3/2wNkAao="
+							},
+							"target": {
+								"$ref": "AAAAAAGg0f5u4wNxtEw="
+							}
+						}
+					]
+				},
+				{
+					"_type": "DFDProcess",
+					"_id": "AAAAAAGg0f5u4wNxtEw=",
+					"_parent": {
+						"$ref": "AAAAAAGg0f22vwNf1KU="
+					},
+					"name": "Process 1.0: Ingestion & Relational Staging - Define table DDL schemas and assign datatypes  - Bulk load CSV records into SQL engine",
+					"ownedElements": [
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGg0gParQQcQUI=",
+							"_parent": {
+								"$ref": "AAAAAAGg0f5u4wNxtEw="
+							},
+							"source": {
+								"$ref": "AAAAAAGg0f5u4wNxtEw="
+							},
+							"target": {
+								"$ref": "AAAAAAGg0f5xkwN8GJk="
+							}
+						}
+					]
+				},
+				{
+					"_type": "DFDProcess",
+					"_id": "AAAAAAGg0f5xkwN8GJk=",
+					"_parent": {
+						"$ref": "AAAAAAGg0f22vwNf1KU="
+					},
+					"name": "Process 2.0: Data Hygiene & Profiling Checks - Audit NULL counts in Age, Height, Weight, Medal - Identify and resolve orphan foreign keys (NOC)",
+					"ownedElements": [
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGg0gPq7AQlxwA=",
+							"_parent": {
+								"$ref": "AAAAAAGg0f5xkwN8GJk="
+							},
+							"source": {
+								"$ref": "AAAAAAGg0f5xkwN8GJk="
+							},
+							"target": {
+								"$ref": "AAAAAAGg0gAIvQOQjQ0="
+							}
+						}
+					]
+				},
+				{
+					"_type": "DFDProcess",
+					"_id": "AAAAAAGg0gAIvQOQjQ0=",
+					"_parent": {
+						"$ref": "AAAAAAGg0f22vwNf1KU="
+					},
+					"name": "Process 3.0: Transformation & Analytical SQL Engine - Filter valid physiological data (post-1960 focus) - Compute Body Mass Index (BMI) - Deduplicate team event medals via CTEs - Calculate min, max, average age windows by sport",
+					"ownedElements": [
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGg0gP/dQQuSDU=",
+							"_parent": {
+								"$ref": "AAAAAAGg0gAIvQOQjQ0="
+							},
+							"source": {
+								"$ref": "AAAAAAGg0gAIvQOQjQ0="
+							},
+							"target": {
+								"$ref": "AAAAAAGg0gEPTQPQpyc="
+							}
+						},
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGg0gQiPQREZfQ=",
+							"_parent": {
+								"$ref": "AAAAAAGg0gAIvQOQjQ0="
+							},
+							"source": {
+								"$ref": "AAAAAAGg0gAIvQOQjQ0="
+							},
+							"target": {
+								"$ref": "AAAAAAGg0gIqbgPgU8M="
+							}
+						}
+					]
+				},
+				{
+					"_type": "DFDProcess",
+					"_id": "AAAAAAGg0gEPTQPQpyc=",
+					"_parent": {
+						"$ref": "AAAAAAGg0f22vwNf1KU="
+					},
+					"name": "Output A: Coaching Dossier  - Anthropometric baselines - Peak performance windows - Sport specialization data",
+					"ownedElements": [
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGg0gSKbQRbv5k=",
+							"_parent": {
+								"$ref": "AAAAAAGg0gEPTQPQpyc="
+							},
+							"source": {
+								"$ref": "AAAAAAGg0gEPTQPQpyc="
+							},
+							"target": {
+								"$ref": "AAAAAAGg0gLsmQPueSI="
+							}
+						}
+					]
+				},
+				{
+					"_type": "DFDProcess",
+					"_id": "AAAAAAGg0gIqbgPgU8M=",
+					"_parent": {
+						"$ref": "AAAAAAGg0f22vwNf1KU="
+					},
+					"name": "Output B: Media Story Pack  - Deduplicated medal tables - Longest athletic careers - Female representation rate",
+					"ownedElements": [
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGg0gSbnQRkhQI=",
+							"_parent": {
+								"$ref": "AAAAAAGg0gIqbgPgU8M="
+							},
+							"source": {
+								"$ref": "AAAAAAGg0gIqbgPgU8M="
+							},
+							"target": {
+								"$ref": "AAAAAAGg0gN0qQP6yRg="
+							}
+						}
+					]
+				},
+				{
+					"_type": "DFDExternalEntity",
+					"_id": "AAAAAAGg0gLsmQPueSI=",
+					"_parent": {
+						"$ref": "AAAAAAGg0f22vwNf1KU="
+					},
+					"name": "High-Performance Trainers"
+				},
+				{
+					"_type": "DFDExternalEntity",
+					"_id": "AAAAAAGg0gN0qQP6yRg=",
+					"_parent": {
+						"$ref": "AAAAAAGg0f22vwNf1KU="
+					},
+					"name": "Sports Journalists"
+				}
+			]
+		}
+	],
+	"documentVersion": 1
+}
